@@ -1,0 +1,119 @@
+html {
+  background-color: rgb(243, 255, 220);
+  color: rgb(67, 91, 54);
+  padding-left: 10px;
+  padding-right 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#banner {
+  width: 90vw;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+}
+
+h1 {
+  padding-top: 2px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.container {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  align-items: top;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 2em;
+}
+
+/*.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(180, 225, 111);
+  width: 90vw;
+  margin: auto;
+  padding: 0px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+}*/
+
+/*nav-bar styling*/
+
+.nav-bar ul { 
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  background-color: rgb(180, 225, 111);
+  width: 90vw;
+  margin: auto;
+  padding: 0px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.nav-bar a {
+  color: rgb(54, 113, 17);
+  text-decoration: none;
+  display: block;
+  padding: 10px 100px 10px 100px;
+}
+
+.nav-bar a:hover {
+  background-color: rgb(209, 246, 153);
+  text-decoration: underline;
+}
+
+/*@media (max-width: 1181px){
+  flex-direction: column;
+}*/
+
+@media (min-width: 1251px){
+.nav-bar li {
+  float: left;
+  text-align: center;
+}
+}
+
+/*NAV-BAR flexbox*/
+/*@media (max-width: 1180px) {
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    /*align-items: top;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 2em;
+  }
+}*/
+
+@media (max-width: 850px) {
+  p {
+    font-family: 'Noteworthy', 'Arial Narrow', Arial, sans-serif;
+  }
+  .nav-bar li {
+    float: center;
+  }
+  /*.nav-bar ul {
+    overflow: auto;
+  }*/
+}
+
+.blog-entry {
+  flex-grow: 1;
+}
