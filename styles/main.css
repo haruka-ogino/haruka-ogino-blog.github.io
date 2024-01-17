@@ -1,5 +1,5 @@
 html {
-  background-color: rgb(243, 255, 220);
+  background-color: rgb(218, 245, 168);
   color: rgb(67, 91, 54);
   padding-left: 10px;
   padding-right 10px;
@@ -21,6 +21,7 @@ h1 {
 }
 
 h2 {
+  padding-top: 20px;
   font-size: 25px;
 }
 
@@ -33,6 +34,27 @@ h2 {
   flex-wrap: wrap;
   align-content: flex-start;
   gap: 2em;
+}
+
+.boxes {
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgb(209, 246, 153);
+  background-color: rgb(251, 255, 244);
+  max-width: 1200px;
+  min-width: 500px;
+  padding: 10px 10px 10px 10px;
+}
+
+.blog-entry {
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgb(209, 246, 153);
+  background-color: rgb(251, 255, 244);
+  max-width: 1200px;
+  padding: 10px 20px 10px 20px;
+  margin: auto;
+  flex-grow: 1;
 }
 
 /*.nav-bar {
@@ -57,7 +79,7 @@ h2 {
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
-  background-color: rgb(180, 225, 111);
+  background-color: rgb(54, 119, 56);
   width: 90vw;
   margin: auto;
   padding: 0px;
@@ -66,7 +88,7 @@ h2 {
 }
 
 .nav-bar a {
-  color: rgb(54, 113, 17);
+  color: rgb(209, 246, 153);
   text-decoration: none;
   display: block;
   padding: 10px 100px 10px 100px;
@@ -74,6 +96,7 @@ h2 {
 
 .nav-bar a:hover {
   background-color: rgb(209, 246, 153);
+  color:rgb(67, 91, 54);
   text-decoration: underline;
 }
 
@@ -114,6 +137,4 @@ h2 {
   }*/
 }
 
-.blog-entry {
-  flex-grow: 1;
-}
+
