@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="main-blog.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <title>Positioning: Relative, Absolute and Fixed - Crash Course</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <h1>Positioning: Relative, Absolute and Fixed - Crash Course</h1>
+
+    <div class="introduction">
+      <h2>Introduction</h2>
+      <p>
+        The default position of HTML elements is ‘static’. This position cannot
+        be moved even when using properties like “left: 10px; bottom: 40px;”.
+        Therefore, an HTML element must first be told a specific position so
+        that the element can be moved around.
+      </p>
+      <p>Three possible positions are relative, absolute and fixed.</p>
+      <div class="container">
+        <img class="code-img" src="images/AC-1.png" />
+        <img src="images/AS-1.png" />
+      </div>
+      <p>
+        The example above shows how despite the container (purple dashed box)
+        being told to move 200px from the left and 100px from the top, the
+        container is not moving.
+      </p>
+      <p>
+        Now, once the arbitrary position of relative is given to this, it is
+        able to move, as per the example below.
+      </p>
+      <div class="container">
+        <img class="code-img" src="images/AC-2.png" />
+        <img src="images/AS-2.png" />
+      </div>
+    </div>
+
+    <div class="absolute">
+      <h2>Absolute Position</h2>
+      <p class="absolute code">position: absolute;</p>
+      <p>
+        The property value of ‘absolute’ essentials removes an element from the
+        document. No space is created for it and other items on the file behave
+        as though this does not exist.
+      </p>
+      <p>
+        The absolute value will first try to move within its parent’s position.
+        If its parent’s position has not been specified, it will keep looking
+        for this in its nested ancestors. If none of them have specified a
+        position, then the element will be positioned relative to the HTML
+        document.
+      </p>
+      <div class="container">
+        <img class="code-img" src="images/AC-3.png" />
+        <img src="images/AS-3.png" />
+      </div>
+      <p>
+        The example above shows how the pink box has moved 200px from the bottom
+        of its parent container. Note how the remaining box behave as completely
+        independently from the pink one, as though it did not exist.
+      </p>
+      <p>
+        If its container did not have any specified position, then the pink box
+        would move 200px from the bottom of the HTML document, as per the
+        example below.
+      </p>
+      <div class="container">
+        <img class="code-img" src="images/AC-4.png" />
+        <img src="images/AS-4.png" />
+      </div>
+      <h3>Using Negative px Values</h3>
+      <p>
+        The code below uses negative values to push the pink box outside of its
+        container.
+      </p>
+      <div class="container">
+        <img class="code-img" src="images/AC-5.png" />
+        <img src="images/AS-5.png" />
+      </div>
+      <p>
+        The following code comments out the container, meaning the pink box is
+        moving 200px out of the HTML document both to the right and down. When
+        this is the case, scroll bars appear in order for the pink box to be
+        fully visible if the user wishes to see it.
+      </p>
+      <div class="container">
+        <img class="code-img" src="images/AC-6.png" />
+        <img src="images/AS-6.png" />
+      </div>
+      <p>
+        These scroll bars, along with the ability to see the entire pink box,
+        can be removed with the following code on its parent element selector
+        (such as body { }, or like in this case, html { }).
+      </p>
+      <div class="container">
+        <img class="code-img" src="images/AC-7.png" />
+        <img src="images/AS-7.png" />
+      </div>
+      <p>
+        This declaration can be used when placing background decoration elements
+        that flow out of the page but scrolling to see the full element is not
+        desired.
+      </p>
+    </div>
+
+    <div class="relative">
+      <h2>Relative Position</h2>
+      <p class="relative code">position: relative;</p>
+      <p>
+        The property value of relative moves the element relative to its
+        original position. It also keeps the element in the normal flow of the
+        document, as opposed to the absolute property value which removes it.
+      </p>
+      <p>
+        If the blue box started on the position as per the image on the left,
+        then the code on the right gives the output right-adjacent image.
+      </p>
+      <div class="container">
+        <img src="images/RS-1.png" />
+        <img class="code-img" src="images/RC.png" />
+        <img src="images/RS-2.png" />
+      </div>
+      <p>
+        This is helpful when wanting to keep an element within the natural flow
+        of the document.
+      </p>
+    </div>
+
+    <div class="fixed">
+      <h2>Fixed Position</h2>
+      <p class="fixed code">position: fixed;</p>
+      <p>The fixed property value works similarly to the absolute one  in that it is also ‘removed’ from the document. However, it only ever works relative to the entire HTML document, not its parents’ position as reference. Moreover, when scrolling, it stays on your screen as you scroll.</p>
+      <div class="container">
+        <img src="images/FS-1-1.png" />
+        <img src="images/FS-1-2.png" />
+        <img class="code-img" src="images/FC-1.png" />
+      </div>
+      <p>This can be used when creating banners.</p>
+      <h3>Pushing Elements Back</h3>
+      <p>If you want to push an element behind others, the declaration below can be used;</p>
+      <p class="z-index code">z-index: -1;</p>
+      <div class="container">
+        <img src="images/FS-2-2.png" />
+        <img class="code-img" src="images/FC-2.png" />
+      </div>
+      <p>All elements are 0 by default, so to push an item back, the -1 value is used.</p>
+  </body>
+</html>
