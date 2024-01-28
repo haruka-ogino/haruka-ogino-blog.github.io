@@ -2,9 +2,32 @@ html {
   background-color: rgb(218, 245, 168);
   color: rgb(67, 91, 54);
   padding-left: 10px;
-  padding-right 10px;
+  padding-right: 10px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+}
+
+.quote {
+  font-style: italic;
+}
+
+ul {
+  text-align: left;
+  list-style-position: inside;
+}
+
+.short-list ul {
+  text-align: center;
+}
+
+.short-list ul {
+  display: inline-block;
+  text-align: left;
+}
+
+.short-list li {
+  text-align: left;
+  list-style-position: inside;
 }
 
 #banner {
@@ -75,7 +98,7 @@ h2 {
 
 /*nav-bar styling below*/
 
-.nav-bar ul { 
+.nav-bar ul {
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
@@ -96,7 +119,7 @@ h2 {
 
 .nav-bar a:hover {
   background-color: rgb(209, 246, 153);
-  color:rgb(67, 91, 54);
+  color: rgb(67, 91, 54);
   text-decoration: underline;
 }
 
@@ -104,11 +127,11 @@ h2 {
   flex-direction: column;
 }*/
 
-@media (min-width: 1251px){
-.nav-bar li {
-  float: left;
-  text-align: center;
-}
+@media (min-width: 1251px) {
+  .nav-bar li {
+    float: left;
+    text-align: center;
+  }
 }
 
 /*NAV-BAR flexbox*/
@@ -118,7 +141,7 @@ h2 {
     flex-direction: column;
     justify-content: space-evenly;
     /* justify-content: space-evenly; */
-    /*align-items: top;
+/*align-items: top;
     flex-wrap: wrap;
     align-content: flex-start;
     gap: 2em;
@@ -138,5 +161,5 @@ h2 {
 }
 
 .bold {
-  font-weight:900;
+  font-weight: 900;
 }
