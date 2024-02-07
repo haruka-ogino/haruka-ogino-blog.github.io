@@ -11,9 +11,20 @@ html {
   font-style: italic;
 }
 
+.date {
+  font-style: italic;
+  font-size: 1em;
+}
+
 ul {
   text-align: left;
   list-style-position: inside;
+}
+
+li {
+  text-align: left;
+  list-style-position: inside;
+  padding-bottom: 5px;
 }
 
 .short-list ul {
